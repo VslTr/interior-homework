@@ -91,6 +91,15 @@ body {
     display: flex;
 }
 
+.sub-menu li:nth-child(1)::after,
+.sub-menu li:nth-child(2)::after,
+.sub-menu li:nth-child(3)::after,
+.sub-menu li:nth-child(4)::after,
+.sub-menu li:nth-child(5)::after {
+    content: "     ";
+    white-space: pre;
+}
+
 .sub-menu-list {
     list-style-type: none;
     display: inline-block;
@@ -115,8 +124,10 @@ body {
 
 }
 .hr {
-    width: 305px;
+    float: left;
+    width: 255px;
     margin-left: 98px;
+    margin-bottom: -5px;
 }
 
 .all-products-img {
@@ -369,6 +380,7 @@ body {
     letter-spacing: 0.05em;
     color: #6c6c6c;
 }
+
 .button {
     font-size: 18px;
     line-height: 53px; /*ставим равную ширине кнопки чтобы текст был по цетру*/
