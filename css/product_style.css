@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.padding-site {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  min-height: 100%;
+  /*Что бы он прижимал нижестоящие блоки и таким образом опускал footer*/
+}
+.header {
+  padding-top: 63px;
+  padding-left: 98px;
+  padding-right: 98px;
+  height: 360px;
+  background-color: #f5f5f5;
+}
+.menu {
+  float: right;
+}
+.menu-list {
+  list-style-type: none;
+  float: left;
+}
+.menu-link {
+  /* Style for "HOME     P" */
+  width: 490px;
+  height: 10px;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 13px;
+}
+.menu-link:hover,
+.sub-menu-link:hover {
+  color: #212121;
+  font-size: 16px;
+}
+.menu-link:active {
+  color: #212121;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  border-bottom: 3px solid #212121;
+  line-height: 25px;
+}
+.header-h2 {
+  margin: 168px 0px 0px 0px;
+  font-size: 62px;
+  line-height: 72px;
+  font-weight: 100;
+  color: #212121;
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    float: none;
+  }
+  .menu-list {
+    float: none;
+  }
+}
+.sub-menu {
+  margin: 115px 0px 0px 0px;
+  padding-left: 98px;
+  padding-right: 98px;
+  display: flex;
+}
+.sub-menu-list {
+  list-style-type: none;
+  display: inline-block;
+}
+.sub-menu-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  color: #6c6c6c;
+  text-decoration: none;
+}
+.sub-menu-link:active {
+  color: #212121;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  border-bottom: 3px solid #212121;
+}
+.hr {
+  width: 305px;
+  margin-left: 98px;
+}
+.all-products-img {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+.all-products-img-block {
+  margin-top: 50px;
+  padding-right: 30px;
+  float: left;
+  width: 360px;
+  height: 360px;
+}
+.arrows {
+  margin-left: 50%;
+  margin-top: 71px;
+}
+.arrows:hover {
+  transform: rotate(100deg);
+}
+.chair {
+  display: flex;
+  margin-top: 140px;
+}
+.chair1 {
+  width: 683px;
+  height: 683px;
+  background-image: url(../img/promo_img1_148.png);
+}
+.chair2 {
+  width: 683px;
+  height: 683px;
+  background-image: url(../img/promo_img_132.png);
+}
+.chair-exclusive {
+  /* Style for "exclusive" */
+  width: 115px;
+  height: 13px;
+  color: #1e88e5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  /* Text style for "exclusive" */
+  letter-spacing: 1.8px;
+  margin-top: 228px;
+  margin-left: 51px;
+}
+.chair-h3 {
+  /* Style for "Fishnet Ch" */
+  width: 236px;
+  height: 28px;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 52px;
+}
+.chair-content {
+  /* Style for "Seat and b" */
+  width: 374px;
+  height: 36px;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.04px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.chair-button {
+  font-size: 18px;
+  line-height: 53px;
+  /*ставим равную ширине кнопки чтобы текст был по цетру*/
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: #212121;
+  box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
+  width: 220px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 22.5px;
+  display: inline-block;
+  margin-top: 34px;
+  margin-left: 50px;
+}
+.footer {
+  height: 384px;
+  background-color: #f7f7f7;
+  width: 1366px;
+  margin: 0 auto;
+}
+.footer-h3 {
+  padding-top: 120px;
+  padding-left: 99px;
+}
+.contact-h3 {
+  /* Style for "Contact Us" */
+  float: left;
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.useful-h3 {
+  /* Style for "Useful Inf" */
+  float: left;
+  margin-left: 168px;
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.lets-h3 {
+  /* Style for "Let’s Stay" */
+  float: left;
+  margin-left: 263px;
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.contacts {
+  /* Style for "132A Bridg" */
+  width: 221px;
+  height: 102px;
+  margin-top: 24px;
+  margin-left: 99px;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  float: left;
+}
+.footer-menu1 {
+  float: left;
+  margin-top: 25px;
+  margin-left: 80px;
+  list-style-type: none;
+}
+.footer-menu2 {
+  float: left;
+  margin-left: 103px;
+  margin-top: 25px;
+  list-style-type: none;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #212121;
+}
+.footer-link:hover {
+  color: #6c6c6c;
+  text-decoration: underline;
+}
+.suscribe {
+  float: left;
+  margin-left: 78px;
+  margin-top: 25px;
+  width: 363px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #212121;
+}
+.eml-form input {
+  margin-left: 78px;
+  margin-top: 26px;
+  width: 370px;
+  height: 48px;
+  background-image: url(../img/eml_19.png);
+  border: 1px solid #d9dee1;
+}
+.input-text {
+  content: url(../img/eml_19.png);
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+.copyright {
+  float: left;
+  margin-left: 98px;
+  margin-top: 61px;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c6c6c;
+}
+.footer-blok img {
+  float: left;
+  margin-left: 158px;
+  margin-top: 60px;
+  font-size: 28px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #6c6c6c;
+}
+.terms-conditions {
+  float: left;
+  margin-left: 172px;
+  margin-top: 60px;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c6c6c;
+}
+.button {
+  font-size: 18px;
+  line-height: 53px;
+  /*ставим равную ширине кнопки чтобы текст был по цетру*/
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: #212121;
+  box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
+  width: 220px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 22.5px;
+  display: inline-block;
+}
+.button:hover,
+.chair-button:hover {
+  box-shadow: 0px 6px 7px 0px rgba(33, 33, 33, 0.34);
+}
