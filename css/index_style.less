@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/*clearfix - класс (название может быть любым) добавляет псевдоэлемент, 
+не дает наезжать обьектам друг на друга при использовании float*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 63px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-link {
+    /* Style for "HOME     P" */
+    width: 490px;
+    height: 10px;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 13px;
+}
+
+.menu-link:hover {
+    color: #212121;
+    font-size: 16px;
+}
+
+.menu-link:active {
+
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid #212121;
+}
+
+
+.slider {
+    height: 800px;
+    background-image: url(../img/slider_img.jpg);
+    position: relative;
+}
+
+.slider-text {
+    margin-top: 283px;
+}
+
+.slider-trending {
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #43a047;
+}
+
+.slider-h2 {
+    font-size: 62px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.slider-content {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #6c6c6c;
+    width: 458px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 18px;
+    line-height: 53px; /*ставим равную ширине кнопки чтобы текст был по цетру*/
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    color: #212121;
+    box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+    width: 220px;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 22.5px;
+    display: inline-block;
+}
+
+.button:hover,
+.chair-button:hover {
+    box-shadow: 0px 6px 7px 0px rgba(33,33,33,0.34);
+}
+
+.pagination {
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    text-align: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle:hover {
+    background-color: #212121;
+}
+
+.circle-active {
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    margin-bottom: 0px;
+}
+
+.menu2 {
+    padding-top: 120px;
+}
+
+.menu2-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu2-link {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #6c6c6c;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.menu2-link-active {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.menu2-link:hover {
+    color: #999797;
+}
+
+.exp-all {
+    float: right;
+    width: 195px;
+    height: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color: #212121;
+}
+
+.exp-all:hover {
+    color: #999797;
+}
+
+.exp-all::after {
+    content:  url(../img/arrow_186.svg);
+}
+
+.featured-blocks {
+    float: right;
+}
+
+.featured-blocks-elem {
+    float: left;
+    list-style-type: none; 
+}
+
+.featured-blocks-button {
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 24px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 107px;
+    background-image: url(../img/arrow_186.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x : 50%;
+    background-position-y : 50%;
+}
+
+.featured-blocks-button:hover {
+    box-shadow: 0 4px 7px 2px rgba(26, 25, 25, 0.35);
+}
+
+.featured-blocks-elem {
+    margin-top: 51px;
+    margin-right: 20px;
+    outline: 1.0px solid #9c9c9c;
+    width: 270px;
+    height: 270px;
+    opacity: 1;
+}
+
+.featured-blocks-text {
+    background-color: #ffffff;
+    width: 270px;
+    height: 270px;
+    opacity: 0.0;
+}
+
+.featured-blocks-text:hover {
+    opacity: 0.9;
+}
+
+.featured-blocks-elem1 {
+    .featured-blocks-elem;
+    background-image: url(../img/product-1.png);
+}
+
+.featured-blocks-elem2 {
+    .featured-blocks-elem;
+    background-image: url(../img/product_2_170.png);
+}
+
+.featured-blocks-elem3 {
+    .featured-blocks-elem;
+    background-image: url(../img/product_3_168.png);
+}
+
+.featured-blocks-elem4 {
+    .featured-blocks-elem;
+    background-image: url(../img/product_4_166.png);
+}
+
+.featured-blocks-h3 {
+    margin-top: 19px;
+    margin-left: 63px;
+    width: 145px;
+    height: 17px;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.blocks-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #6c6c6c;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.featured-blocks-img {
+    padding-right:20px;
+    margin-top: 50px;
+}
+
+.chair {
+    float: left;
+    margin-top: 120px;
+}
+
+.chair1 {
+    width: 683px;
+    height: 683px;
+    background-image: url(../img/promo_img1_148.png);
+}
+
+.chair2 {
+    width: 683px;
+    height: 683px;
+    background-image: url(../img/promo_img_132.png);
+}
+
+.chair-exclusive {
+    /* Style for "exclusive" */
+    width: 115px;
+    height: 13px;
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "exclusive" */
+    letter-spacing: 1.8px;
+    margin-top: 228px;
+    margin-left: 51px;
+}
+
+.chair-h3 {
+    /* Style for "Fishnet Ch" */
+    width: 236px;
+    height: 28px;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 52px;
+}
+
+.chair-content {
+    /* Style for "Seat and b" */
+    width: 374px;
+    height: 36px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.04px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.chair-button {
+    font-size: 18px;
+    line-height: 53px; /*ставим равную ширине кнопки чтобы текст был по цетру*/
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    color: #212121;
+    box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+    width: 220px;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 22.5px;
+    display: inline-block;
+    margin-top: 34px;
+    margin-left: 50px;
+}
+
+.trending-products-txt {
+    margin-top: 119px;
+    margin-bottom: 68px;
+}
+
+.trending-products-h3 {
+    /* Style for "Trending P" */
+    width: 331px;
+    height: 35px;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 119px;
+}
+
+.exp-all2 {
+    width: 195px;
+    height: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color: #212121;
+    float: right;
+    padding-right: 10px;
+}
+
+.exp-all2:hover {
+    color: #999797;
+}
+
+.exp-all2::after {
+    content:  url(../img/arrow_186.svg);
+}
+
+.trending-products-img-block {
+    margin-top: 30px;
+    padding-right:30px;
+    float: left;
+    width: 360px;
+    height: 360px;
+}
+
+.slider2 {
+    height: 800px;
+    margin-top: 120px;
+    background-image: url(../img/slider2_img.png);
+    position: relative;
+}
+
+.slider2-text {
+    margin-left: 98px;
+    padding-top: 287px;
+}
+
+.slider2-hotdeal {
+    /* Style for "Hot deal" */
+    width: 120px;
+    height: 13px;
+    color: #e53935;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 22px;
+    
+}
+
+.slider2-h2 {
+    font-size: 62px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.slider2-content {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #6c6c6c;
+    width: 458px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination2 {
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    left: 623px;
+    right: 623px;
+}
+
+.chair3 {
+    width: 570px;
+    height: 570px;
+    background-image: url(../img/product_1_lg_66.png);
+    float: left;
+    padding-right: 30px;
+}
+
+.products-img-block2 {
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+
+.exclusive2 {
+    margin-top: 120px;
+    margin-left: 68px;
+    margin-right: 68px;
+}
+
+.banner {
+    height: 516px;
+    background-image: url(../img/back_img_44.jpg);
+    position: relative;
+    margin-top: 120px;
+}
+
+.m-app {
+    padding-top: 125px;
+    margin-left: 99px;
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6c6c6c;
+}
+
+.banner-h2 {
+    padding-top: 22px;
+    margin-bottom: 26px;
+    margin-left: 106px;
+    width: 455px;
+    height: 116px;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.banner-txt {
+    margin-left: 99px;
+    margin-bottom: 33px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+.button2 {
+    width: 135px;
+    height: 40px;
+}
+
+.banner-button {
+    margin-left: 98px;
+}
+
+.button2:hover {
+    box-shadow: 0px 3px 3px 0px rgba(26, 25, 25, 0.35);
+}
+
+.footer {
+    height: 384px;
+    background-color: #f7f7f7;
+}
+
+.footer-h3 {
+    padding-top: 120px;
+    padding-left: 99px;
+
+}
+
+.contact-h3 {
+    /* Style for "Contact Us" */
+    float: left;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.useful-h3 {
+    /* Style for "Useful Inf" */
+    float: left;
+    margin-left: 168px;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.lets-h3 {
+    /* Style for "Let’s Stay" */
+    float: left;
+    margin-left: 263px;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.contacts {
+    /* Style for "132A Bridg" */
+    width: 221px;
+    height: 102px;
+    margin-top: 24px;
+    margin-left: 99px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    float: left;
+}
+
+.footer-menu1 {
+    float: left;
+    margin-top: 25px;
+    margin-left: 80px;
+    list-style-type: none;
+}
+
+.footer-menu2 {
+    float: left;
+    margin-left: 103px;
+    margin-top: 25px;
+    list-style-type: none;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #212121;
+}
+
+.footer-link:hover {
+    color: #6c6c6c;
+    text-decoration: underline;
+}
+
+.suscribe {
+    float: left;
+    margin-left: 78px;
+    margin-top: 25px;
+    width: 363px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #212121;
+}
+
+.eml-form input {
+    margin-left: 78px;
+    margin-top: 26px;
+    width: 370px;
+    height: 48px;
+    background-image:url(../img/eml_19.png);
+    border: 1.0px solid #d9dee1;
+}
+
+.input-text {
+    content: url(../img/eml_19.png);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position-x : 95%;
+    background-position-y : 50%;
+}
+
+.copyright {
+    float: left;
+    margin-left: 98px;
+    margin-top: 61px;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c6c;
+}
+
+.footer-blok img {
+    float: left;
+    margin-left: 158px;
+    margin-top: 60px;
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #6c6c6c;
+}
+
+.terms-conditions {
+    float: left;
+    margin-left: 172px;
+    margin-top: 60px;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c6c;
+}
